@@ -1,0 +1,6 @@
+[submodule "src/transactions"]
+	path = src/transactions
+	url = https://github.com/leoBitto/transactions.git
+[submodule "src/habits"]
+	path = src/habits
+	url = https://github.com/leoBitto/habits.git

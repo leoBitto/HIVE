@@ -11,9 +11,9 @@
                     <h5>Site Map</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="{% url 'website:home' %}">HOME</a></li>
-                        <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="#">Transactions</a></li>
+                        <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="{% url 'transactions:index' %}">Transactions</a></li>
                         <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="#">Screener</a></li>
-                        <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="#">Habits</a></li>
+                        <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="{% url 'habits:index' %}">Habits</a></li>
                     </ul>
                 </div>
                 <div class="col-6">
