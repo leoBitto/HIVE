@@ -1,8 +1,55 @@
 {% extends "website/base.html" %}
 {% load static %}
+{% block title %}Homepage{% endblock title %}
 {% block content %}
 
+<style>
+    .app-section {
+        background-color: #FFD180;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 8px;
+    }
 
+    .btn-custom {
+        background-color: #FF6347;
+        border-color: #FF6347;
+        color: #fff;
+    }
+</style>
 
+<div class="container mt-5">
+    <div class="d-flex flex-column flex-md-row justify-content-around">
+
+        <div class="col-md-4 mb-4 app-section">
+            <div class="text-center">
+                <i class="fas fa-exchange-alt"></i>
+                <h5>Transactions</h5>
+                <p>Explore and manage your transactions.</p>
+                <!--<a href="{% url 'transactions:base' %}" class="btn btn-custom">Explore Transactions</a>-->
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4 app-section">
+            <div class="text-center">
+                <i class="fas fa-chart-bar"></i>
+                <h5>Screener</h5>
+                <p>Use our screener tool for in-depth analysis.</p>
+                <!--<a href="{% url 'screener:index' %}" class="btn btn-custom">Access Screener</a>-->
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4 app-section">
+            <div class="text-center">
+                <i class="fas fa-heart"></i>
+                <h5>Habits</h5>
+                <p>Track and improve your habits for a better lifestyle.</p>
+                <!--<a href="{% url 'habits:overview' %}" class="btn btn-custom">View Habits</a>-->
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
 {% endblock %}

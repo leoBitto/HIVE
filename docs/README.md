@@ -1,8 +1,6 @@
-# DjangoForge
+# HIVE
 
 ## Overview
-
-DjangoForge is a ready-to-deploy Django project. This guide outlines the process of automated deployment using GitHub Actions for a template repository.
 
 Follow these steps to prepare the project:
 
