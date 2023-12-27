@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('website.urls', namespace='website')),
     path('transactions/', include('transactions.urls', namespace='transactions')),
     path('habits/', include('habits.urls', namespace='habits')),
+    path('journal/', include(('journal.urls', 'journal'), namespace="journal")),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

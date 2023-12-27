@@ -1,6 +1,7 @@
 asgiref==3.7.2
 Django==5.0
 django-environ==0.11.2
+django-quill-editor==0.1.40
 fontawesomefree==6.4.2
 gunicorn==21.2.0
 numpy==1.26.2

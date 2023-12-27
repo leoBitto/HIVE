@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'fontawesomefree',
     'transactions',
     'habits',
+    'django_quill',
+    'journal',
 ]
 
 MIDDLEWARE = [
