@@ -9,6 +9,7 @@
         margin: 10px;
         padding: 20px;
         border-radius: 8px;
+        text-align: center;
     }
 
     .btn-custom {
@@ -18,47 +19,33 @@
     }
 </style>
 
-<div class="container mt-5">
-    <div class="d-flex flex-column flex-md-row justify-content-around">
-
-        <div class="col-md-4 mb-4 app-section">
-            <div class="text-center">
-                <i class="fas fa-exchange-alt"></i>
-                <h5>Transactions</h5>
-                <p>Explore and manage your transactions.</p>
-                <a href="{% url 'transactions:index' %}" class="btn btn-custom">Explore Transactions</a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="app-section">
+                <i class="fas fa-exchange-alt m-2"></i>
+                <a href="{% url 'transactions:index' %}" class="btn btn-custom btn-sm"> Transactions</a>
             </div>
         </div>
-
-        <div class="col-md-4 mb-4 app-section">
-            <div class="text-center">
-                <i class="fa-solid fa-book"></i>
-                <h5>Journal</h5>
-                <p>Track your Mood, Track your life.</p>
-                <a href="{% url 'journal:diary_entry_create' %}" class="btn btn-custom">Open Diary</a>
+        <div class="col-md-6 mb-4">
+            <div class="app-section">
+                <i class="fa-solid fa-book m-2"></i>
+                <a href="{% url 'journal:diary_entry_create' %}" class="btn btn-custom btn-sm"> Diary</a>
             </div>
         </div>
-
-        <div class="col-md-4 mb-4 app-section">
-            <div class="text-center">
-                <i class="fas fa-chart-bar"></i>
-                <h5>Screener</h5>
-                <p>Use our screener tool for in-depth analysis.</p>
-                <a href="" class="btn btn-custom">Access Screener</a>
+        <div class="col-md-6 mb-4">
+            <div class="app-section">
+                <i class="fas fa-chart-bar m-2"></i>
+                <a href="" class="btn btn-custom btn-sm"> Screener</a>
             </div>
         </div>
-
-        <div class="col-md-4 mb-4 app-section">
-            <div class="text-center">
-                <i class="fas fa-heart"></i>
-                <h5>Habits</h5>
-                <p>Track and improve your habits for a better lifestyle.</p>
-                <a href="{% url 'habits:index' %}" class="btn btn-custom">View Habits</a>
+        <div class="col-md-6 mb-4">
+            <div class="app-section">
+                <i class="fas fa-heart m-2"></i>
+                <a href="{% url 'habits:index' %}" class="btn btn-custom btn-sm"> Habits</a>
             </div>
         </div>
-
     </div>
-
 </div>
 
 {% endblock %}
