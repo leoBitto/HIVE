@@ -168,7 +168,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'logs/forge.log',  # Il percorso relativo alla cartella 'logs'
+            'filename': os.path.join(BASE_DIR, 'logs/forge.log'),  # Il percorso relativo alla cartella 'logs'
             'formatter': 'verbose',
         },
     },
