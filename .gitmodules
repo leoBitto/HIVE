@@ -7,3 +7,6 @@
 [submodule "src/journal"]
 	path = src/journal
 	url = https://github.com/leoBitto/journal.git
+[submodule "src/logging_app"]
+	path = src/logging_app
+	url = https://github.com/leoBitto/Django-logging.git

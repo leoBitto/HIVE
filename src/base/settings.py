@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'habits',
     'django_quill',
     'journal',
+    'logging_app',
+
 ]
 
 MIDDLEWARE = [
@@ -58,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'logging_app.middleware.LogMiddleware',
 ]
 
 ROOT_URLCONF = 'base.urls'
