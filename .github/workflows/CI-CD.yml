@@ -45,7 +45,7 @@ jobs:
         run: cat ./config/.env
       
       - name: Build Docker image using Docker Compose
-        run: docker-compose -f docker-compose.dev.yml build
+        run: docker compose -f docker-compose.dev.yml build
 
       - name: verify that all the container have been built
         run: docker images
@@ -187,7 +187,7 @@ jobs:
             docker pull ghcr.io/leobitto/${{ env.IMAGE_NAME }}:latest 
             docker tag ghcr.io/leobitto/${{ env.IMAGE_NAME }}:latest ${{ env.IMAGE_NAME }}
 
-            docker-compose -f /opt/${{ env.REPO_NAME }}/docker-compose.prod.yml up -d --force-recreate
+            docker compose -f /opt/${{ env.REPO_NAME }}/docker-compose.prod.yml up -d --force-recreate
             echo "wait for it.."
             sleep 5
             echo "5 seconds has passed"
