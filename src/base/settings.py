@@ -48,7 +48,9 @@ INSTALLED_APPS = [
     'logging_app',
     'pwa',
     'webpush',
-
+    'transactions',
+    'habits',
+    'journal'
 
 ]
 
@@ -162,10 +164,10 @@ CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://*:8000", "https://" + o
 
 
 
-PWA_APP_NAME = "TEST name"
-PWA_APP_DESCRIPTION = "test description"
-PWA_APP_THEME_COLOR = "#eb7d34"
-PWA_APP_BACKGROUND_COLOR = "#ebc334"
+PWA_APP_NAME = "HIVE"
+PWA_APP_DESCRIPTION = "An app to track your life"
+PWA_APP_THEME_COLOR = "#fc9d03"
+PWA_APP_BACKGROUND_COLOR = "#ed9740"
 PWA_APP_DISPLAY = 'standalone'
 PWA_APP_SCOPE = '/'
 PWA_APP_ORIENTATION = 'any'
@@ -173,13 +175,13 @@ PWA_APP_START_URL = '/'
 PWA_APP_STATUS_BAR_COLOR = 'default'
 PWA_APP_ICONS = [
     {
-        'src': "/static/pwa/icons/icon-256x256.png",
+        'src': "/static/icons/bee.png",
         'sizes': '256x256'
     }
 ]
 PWA_APP_SPLASH_SCREEN = [
     {
-        'src': "/static/pwa/icons/icon-512x512.png",
+        'src': "/static/pwa/icons/HIVE_SPLASH.png",
         'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
     }
 ]

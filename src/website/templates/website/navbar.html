@@ -1,24 +1,36 @@
-<nav class="navbar navbar-expand-lg">
+{% load static %}
+<nav class="navbar navbar-expand-lg" style="background-color: #FFD180;">
     <div class="container-fluid">
-        <a class="navbar-brand px-5" href="{% url 'website:home' %}">HOME</a>
+        <a class="navbar-brand" href="{% url 'website:home' %}">
+            <img src="{% static 'icons/bee.png' %}" alt="Home" width="30" height="30" class="d-inline-block align-text-top">
+            HOME
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item px-5">
-                <a class="nav-link" href="{% url 'website:home' %}">link 1</a>
-            </li>
-            <li class="nav-item px-5">
-                <a class="nav-link" href="{% url 'website:home' %}">Link 2</a>
-            </li>
-            <li class="nav-item px-5">
-                <a class="nav-link" href="{% url 'website:home' %}">Link 3</a>
-            </li>
-            <li class="nav-item px-5">
-                <a class="nav-link" href="{% url 'website:home' %}">Link 4</a>
-            </li>
-        </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="{% url 'transactions:index' %}">
+                        <i class="fas fa-exchange-alt"></i> Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="{% url 'journal:diary_entry_create' %}">
+                        <i class="fa-solid fa-book"></i> Journal
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">
+                        <i class="fas fa-chart-bar"></i> Screener
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="{% url 'habits:index' %}">
+                        <i class="fas fa-heart"></i> Habits
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

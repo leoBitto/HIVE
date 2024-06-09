@@ -1,7 +1,49 @@
 {% extends "website/base.html" %}
 {% load static %}
+{% block title %}Homepage{% endblock title %}
 {% block content %}
 
+<style>
+    .app-section {
+        background-color: #FFD180;
+        border-radius: 8px;
+        text-align: center;
+    }
 
+    .btn-custom {
+        background-color: #FF6347;
+        border-color: #FF6347;
+        color: #fff;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class=" m-1 p-2 app-section">
+                <i class="fas fa-exchange-alt m-2"></i>
+                <a href="{% url 'transactions:index' %}" class="btn btn-custom btn-sm"> Transactions</a>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class=" m-1 p-2 app-section">
+                <i class="fa-solid fa-book m-2"></i>
+                <a href="{% url 'journal:diary_entry_create' %}" class="btn btn-custom btn-sm"> Journal</a>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class=" m-1 p-2 app-section">
+                <i class="fas fa-chart-bar m-2"></i>
+                <a href="" class="btn btn-custom btn-sm"> Screener</a>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class=" m-1 p-2 app-section">
+                <i class="fas fa-heart m-2"></i>
+                <a href="{% url 'habits:index' %}" class="btn btn-custom btn-sm"> Habits</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
