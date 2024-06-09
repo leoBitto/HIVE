@@ -182,7 +182,7 @@ jobs:
 
             docker system prune -f
 
-            docker-compose -f /opt/${{ env.REPO_NAME }}/docker-compose.prod.yml down
+            docker compose -f /opt/${{ env.REPO_NAME }}/docker-compose.prod.yml down
 
             docker pull ghcr.io/leobitto/${{ env.IMAGE_NAME }}:latest 
             docker tag ghcr.io/leobitto/${{ env.IMAGE_NAME }}:latest ${{ env.IMAGE_NAME }}
