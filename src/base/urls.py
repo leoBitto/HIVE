@@ -21,16 +21,14 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('transactions/', include('transactions.urls', namespace='transactions')),
-    path('habits/', include('habits.urls', namespace='habits')),
-    path('journal/', include(('journal.urls', 'journal'), namespace="journal")),
+    path('transactions/', include(('transactions.urls', 'transactions'), namespace='transactions')),
+    path('habits/', include(('habits.urls', 'habits'), namespace='habits')),
+    #path('journal/', include(('journal.urls', 'journal'), namespace="journal")),
     path('dashboard/logging/', include(('logging_app.urls', 'logging'), namespace='logging')),
 
-    
     path('', include('website.urls', namespace='website')),
     path('', include('pwa.urls')),  # You MUST use an empty string as the URL prefix
 
-    
     path('webpush/', include('webpush.urls')),
 ]
 if settings.DEBUG:

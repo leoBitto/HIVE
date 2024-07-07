@@ -7,6 +7,4 @@
 [submodule "src/habits"]
 	path = src/habits
 	url = https://github.com/leoBitto/Django-habits.git
-[submodule "src/journal"]
-	path = src/journal
-	url = https://github.com/leoBitto/Django-journal.git
+

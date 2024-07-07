@@ -11,7 +11,7 @@
                 <ul class="nav flex-column">
                     <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="{% url 'website:home' %}">HOME</a></li>
                     <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="{% url 'transactions:index' %}">Transactions</a></li>
-                    <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="{% url 'journal:diary_entry_create' %}">Journal</a></li>
+                    
                     <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="#">Screener</a></li>
                     <li class="nav-item mb-0"><a class="p-0 nav-link text-decoration-none text-orange" href="{% url 'habits:index' %}">Habits</a></li>
                 </ul>
@@ -26,13 +26,13 @@
                                 Logout from account: {{ user.username }}
                             </a>
                             </form>
-                            <a class="d-flex align-items-center text-decoration-none " href="{% url 'website:dashboard' %}">
+                            <a class="d-flex align-items-center text-decoration-none text-orange" href="{% url 'website:dashboard' %}">
                                 Dashboard
                             </a>
                         </li>
                     {% else %}
                         <li class="ms-1">
-                            <a class="d-flex align-items-center text-decoration-none " href="{% url 'login' %}">
+                            <a class="d-flex align-items-center text-decoration-none text-orange" href="{% url 'login' %}">
                                 Login
                             </a>
                         </li>
